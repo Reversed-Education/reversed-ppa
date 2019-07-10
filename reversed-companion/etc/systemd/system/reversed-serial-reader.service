@@ -1,0 +1,13 @@
+[Unit]
+Description=reversed companion serial reader
+After=network.target
+
+[Service]
+User=pi
+Group=www-data
+WorkingDirectory=/usr/local/reversed/serial-reader
+Environment="PATH=/usr/bin"
+ExecStart=/usr/bin/python3 app/main.py
+
+[Install]
+WantedBy=multi-user.target

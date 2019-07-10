@@ -1,0 +1,11 @@
+--- redis.conf.orig	2019-07-09 15:01:34.302971466 +0200
++++ redis.conf	2019-07-09 15:03:04.703615653 +0200
+@@ -144,7 +144,7 @@
+ #                        UPSTART_JOB or NOTIFY_SOCKET environment variables
+ # Note: these supervision methods only signal "process is ready."
+ #       They do not enable continuous liveness pings back to your supervisor.
+-supervised no
++supervised systemd
+ 
+ # If a pid file is specified, Redis writes it where specified at startup
+ # and removes it at exit.

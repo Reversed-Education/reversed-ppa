@@ -14,3 +14,9 @@ $ sudo apt update
 ```sh
 $ sudo apt install reversed-companion
 ```
+
+## Buil deb packages
+
+```sh
+$ MAJOR=0 MINOR=1 REVISION=3 EMAIL=MailOfTheKeyOwner ./build_deb_package.sh ~/path/to/reversed-companion/source
+```
