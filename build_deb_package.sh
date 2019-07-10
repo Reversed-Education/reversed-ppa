@@ -33,12 +33,15 @@ root_folder=build/$complete_name
 
 cp -r reversed-companion $root_folder
 
+mkdir -p $root_folder/usr/local/reversed/backend
 cp -r $1/backend/app $root_folder/usr/local/reversed/backend/app
 cp $1/backend/requirements.txt $root_folder/usr/local/reversed/backend/requirements.txt
 
+mkdir -p $root_folder/usr/local/reversed/serial-reader
 cp -r $1/serial-reader/app $root_folder/usr/local/reversed/serial-reader/app
 cp $1/serial-reader/requirements.txt $root_folder/usr/local/reversed/serial-reader/requirements.txt
 
+mkdir -p $root_folder/var/www/
 cp -r $1/frontend/build $root_folder/var/www/html
 
 dpkg-deb --build $root_folder
@@ -56,6 +59,6 @@ gpg --default-key "${EMAIL}" --clearsign -o - Release > InRelease
 
 # Commit & push
 git add -A
-git commit -m "Upload $complete_name"
+git commit -m "Publish $complete_name"
 
 echo 'now push'
