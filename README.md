@@ -17,6 +17,8 @@ $ sudo apt install reversed-companion
 
 ## Buil deb packages
 
+Go to reversed-companion/DEBIAN and edit the version in the control file.
+
 ```sh
 $ MAJOR=0 MINOR=1 REVISION=3 EMAIL=MailOfTheKeyOwner ./build_deb_package.sh ~/path/to/reversed-companion/source
 ```
