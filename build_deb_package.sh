@@ -47,6 +47,7 @@ cp -r $1/frontend/build $root_folder/var/www/html
 dpkg-deb --build $root_folder
 
 cp $root_folder.deb $complete_name.deb
+rm -r build
 
 # Packages & Packages.gz
 dpkg-scanpackages --multiversion . > Packages
