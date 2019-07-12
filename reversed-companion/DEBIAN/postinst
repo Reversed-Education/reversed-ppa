@@ -1,9 +1,9 @@
 #!/bin/sh
 
-pip3 install -r /usr/local/reversed/backend/requirements.txt
-pip3 install -r /usr/local/reversed/serial-reader/requirements.txt
+pip3 install -r /srv/reversed/backend/requirements.txt
+pip3 install -r /srv/reversed/serial-reader/requirements.txt
 
-sudo patch /etc/redis/redis.conf < /tmp/redis.conf.patch
+sudo patch -f /etc/redis/redis.conf < /tmp/redis.conf.patch
 
 sudo systemctl enable redis
 sudo systemctl enable reversed-backend
