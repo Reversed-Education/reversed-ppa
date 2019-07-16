@@ -5,6 +5,8 @@ pip3 install -r /srv/reversed/serial-reader/requirements.txt
 
 sudo patch -f /etc/redis/redis.conf < /tmp/redis.conf.patch
 
+rm /etc/nginx/sites-enabled/default
+
 sudo systemctl enable redis
 sudo systemctl enable reversed-backend
 sudo systemctl enable reversed-serial-reader
