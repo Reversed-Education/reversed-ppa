@@ -3,10 +3,11 @@ Description=reversed companion backend server
 After=network.target
 
 [Service]
-User=pi
+User=%i
 Group=www-data
 WorkingDirectory=/srv/reversed/backend
 Environment="PATH=/usr/bin"
+Restart=always
 ExecStart=/usr/bin/python3 app/main.py
 
 [Install]
