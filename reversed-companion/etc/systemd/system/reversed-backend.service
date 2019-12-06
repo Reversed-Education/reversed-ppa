@@ -3,7 +3,7 @@ Description=reversed companion backend server
 After=network.target
 
 [Service]
-User=%i
+User=hummingbird
 Group=www-data
 WorkingDirectory=/srv/reversed/backend
 Environment="PATH=/usr/bin"

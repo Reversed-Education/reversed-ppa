@@ -3,7 +3,7 @@ Description=reversed companion serial reader
 After=network.target
 
 [Service]
-User=%i
+User=hummingbird
 Group=www-data
 WorkingDirectory=/srv/reversed/serial-reader
 Environment="PATH=/usr/bin"
