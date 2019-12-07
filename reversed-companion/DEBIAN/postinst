@@ -3,14 +3,14 @@ pip3 install wheel
 pip3 install -r /srv/reversed/backend/requirements.txt
 pip3 install -r /srv/reversed/serial-reader/requirements.txt
 
-sudo patch -f /etc/redis/redis.conf < /tmp/redis.conf.patch
+patch -f /etc/redis/redis.conf < /tmp/redis.conf.patch
 
 rm /etc/nginx/sites-enabled/default
 
-sudo systemctl enable redis
-sudo systemctl enable reversed-backend
-sudo systemctl enable reversed-serial-reader
+systemctl enable redis
+systemctl enable reversed-backend
+systemctl enable reversed-serial-reader
 
-sudo systemctl start redis
-sudo systemctl start reversed-backend
-sudo systemctl start reversed-serial-reader
+systemctl start redis
+systemctl start reversed-backend
+systemctl start reversed-serial-reader

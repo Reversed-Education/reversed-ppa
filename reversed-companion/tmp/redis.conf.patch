@@ -1,5 +1,14 @@
---- redis.conf.orig	2019-07-09 15:01:34.302971466 +0200
-+++ redis.conf	2019-07-09 15:03:04.703615653 +0200
+--- redis.conf.orig	2019-12-07 12:23:26.973857493 +0100
++++ redis.conf	2019-12-07 12:24:34.649672362 +0100
+@@ -133,7 +133,7 @@
+ 
+ # By default Redis does not run as a daemon. Use 'yes' if you need it.
+ # Note that Redis will write a pid file in /var/run/redis.pid when daemonized.
+-daemonize yes
++daemonize no
+ 
+ # If you run Redis from upstart or systemd, Redis can interact with your
+ # supervision tree. Options:
 @@ -144,7 +144,7 @@
  #                        UPSTART_JOB or NOTIFY_SOCKET environment variables
  # Note: these supervision methods only signal "process is ready."
