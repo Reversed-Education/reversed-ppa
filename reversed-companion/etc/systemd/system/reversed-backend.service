@@ -1,6 +1,6 @@
 [Unit]
 Description=reversed companion backend server
-After=network.target
+After=network.target redis.service
 
 [Service]
 User=hummingbird
