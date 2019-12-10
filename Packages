@@ -107,6 +107,24 @@ Description: This is the reversed companion
  and serial reader.
 
 Package: reversed-companion
+Version: 0.2-10
+Architecture: all
+Essential: yes
+Maintainer: Martin Wudenka <Martin.Wudenka@gmx.de>
+Pre-Depends: python3-dev (>= 3.7), python3-pip (>= 18.1), python3-setuptools (>= 40.8), redis-server (>= 5), nginx (>=1.10)
+Depends: python3 (>= 3.7)
+Filename: ./reversed-companion_0.2-10.deb
+Size: 3579812
+MD5sum: 265779d4af225cb8fe084435d7fe7a63
+SHA1: 0c087f12f6e80773ba905c202df716604eaf264c
+SHA256: 7d101ed6fe04e85947f0df21bb02142ae121355b6bc8b08cfa0cb27e33d68ada
+Section: utils
+Priority: required
+Description: This is the reversed companion
+ computer package. Including frontend, backend
+ and serial reader.
+
+Package: reversed-companion
 Version: 0.2-2
 Architecture: all
 Essential: yes
