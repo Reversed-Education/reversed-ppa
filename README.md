@@ -4,8 +4,8 @@ This is a debian PPA for easier testing on multiple devices.
 ## Add the PPA to your system
 
 ```sh
-$ curl -s --compressed "https://hobbeshunter.github.io/reversed-ppa/KEY.gpg" | sudo apt-key add -
-$ sudo curl -s --compressed -o /etc/apt/sources.list.d/reversed.list "https://hobbeshunter.github.io/reversed-ppa/reversed.list"
+$ curl -s --compressed "https://reversed-education.github.io/reversed-ppa/KEY.gpg" | sudo apt-key add -
+$ sudo curl -s --compressed -o /etc/apt/sources.list.d/reversed.list "https://reversed-education.github.io/reversed-ppa/reversed.list"
 $ sudo apt update
 ```
 
