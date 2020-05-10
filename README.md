@@ -1,6 +1,8 @@
 # reversed-ppa
 This is a debian PPA for easier testing on multiple devices.
 
+It was built by following the instructions from [Assaf Morami](https://assafmo.github.io/2019/05/02/ppa-repo-hosted-on-github.html).
+
 ## Add the PPA to your system
 
 ```sh
@@ -15,10 +17,12 @@ $ sudo apt update
 $ sudo apt install reversed-companion
 ```
 
-## Buil deb packages
+## Build deb packages
 
 Go to reversed-companion/DEBIAN and edit the version in the control file.
 
 ```sh
 $ MAJOR=0 MINOR=1 REVISION=3 EMAIL=MailOfTheKeyOwner ./build_deb_package.sh ~/path/to/reversed-companion/source
 ```
+
+Off course, for this to work you need the secret key, which only I have.
